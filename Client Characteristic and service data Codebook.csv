@@ -1,0 +1,334 @@
+Nick's ride client characteristic codebook,,,,,for service codebook scrolldown to line 43
+Variable,Data_Type,Num_Missing,Pct_Missing,Unique_Values,
+clientid,integer,0,0,"106, 239, 913, 973, 1009",
+providertype,character,0,0,"Certified Recovery Peer Advocate, Certified Recovery Peer Advocate - Provisional, Peer Specialist, Clinician",
+notedate,character,0,0,"4/1/25, 4/2/25, 4/3/25, 4/4/25, 4/6/25",
+starttime,character,0,0,"14:30:00, 09:08:00, 09:05:00, 10:15:00, 11:00:00",
+endtime,character,0,0,"15:00:00, 09:23:00, 09:07:00, 11:50:00, 11:20:00",
+duration,integer,0,0,"30, 15, 2, 95, 20",
+building,character,50,0.852951211,"Nick`s Ride 4 Friends, City of Auburn, NA, Cayuga County Jail, Cayuga County Court House",
+room,character,50,0.852951211,"Variable, Phone Call, Text Message, NA, AIC Court",
+notes,character,119,2.030023883,"TW transported the client back home to his apartment, T/W transported Client from Nicks Ride 4 Friends at 13 Chapel St Auburn NY to Walgreens Pharmacy at 150 Grant Ave Auburn NY. T/W then transported Client back to NR4F. Client was without his medication., T/W provided Client with funds for his RX co payment at Walgreens Pharmacy at 150 Grant Ave Auburn NY., This writer brought the client to the Colonial Laundry on Genesee Street in Auburn. Then to the Salvation Army on Grant Avenue in Auburn. This writer was then told that they had to get back to NR4F, so client was dropped off back at their current residence being the Cayuga Inn., This writer picked up this client do run some errands and help to obtain things for the baby because they are lacking. This client needed to go to the laundry matt because their clothes were still wet from the previous night. While the clothes were drying this writer brought this client to the Salvation Army to get a few things for the baby. (See breaking barriers note) Time was cut short due to lack of staff so this writer dropped the client off but will continue when time is available.",
+notetype,character,0,0,"Transportation, Basic Needs, Peer Support, Peer Empowerment, Admission to Treatment",
+admit_mfname,character,5596,95.46229956,"NA, Confidential Help for Alcohol and Drugs, Cove Forge/White Deer Run, Syracuse Recovery Services, Dick Van Dyke Addiction Treatment Center (DVD-ATC)",
+admit_date,character,5595,95.44524053,"NA, 4/7/25, 4/11/25, 4/17/25, 4/9/25",
+admit_type,character,5595,95.44524053,"NA, SUD, BHU, MH",
+basic_type,character,5436,92.73285568,"NA, Rx Co-payment, Child Care, Legal Documents, Hygiene Item/s",
+basic_money,numeric,5349,91.24872057,"NA, 3.2, 82.23, 398, 9.5",
+corr_method,character,5413,92.34049812,"NA, Email, Phone Call, Text, Mailing",
+corr_contact,character,5414,92.35755715,"NA, Fidelis Care/MCO, East Hill Medical/Duckett Family Med, Michael Tillman, Client",
+corr_clientpresent,character,5413,92.34049812,"NA, No, Yes",
+eve_type,logical,5862,100,NA,
+eve_money,integer,5759,98.2429205,"NA, 0",
+hous_location,character,5840,99.62470147,"NA, NR4F, nicks ride, Delajs, 33 Columbus Street Apartment # 1 Auburn NY 13021",
+moud_inducted,character,5860,99.96588195,"NA, Yes, No",
+moud_inductiondays,integer,5861,99.98294098,"NA, 0",
+moud_prescriber,character,5861,99.98294098,"NA, PNP Tammy Balamut",
+narcan_lotnum,integer,5851,99.81235073,"NA, 240496, 220863, 221016, 230985",
+narcan_expmonth,character,5851,99.81235073,"NA, 2028-04, 2025-07, 2025-09, 2026-06",
+other_shortdes,logical,5862,100,NA,
+outreach_money,numeric,5516,94.09757762,"NA, 0, 75, 24, 5",
+tran_vehic,character,3504,59.77482088,"Ford, Outreach Blue Chevy, NA, Chevy, EHMC Blue Chevy",
+tran_reason,character,3504,59.77482088,"Client Appointment, Medication, NA, Laundry & Thrift Store, Errands.",
+tran_puloc,character,3504,59.77482088,"Other, 13 Chapel Street, Auburn New York 13021, NA, Home residence of individual, Home residence of friend/acquaintance/family member",
+tran_puloc_other,character,4907,83.70863187,"Cayuga County Mental Health, NA, Colonial Laundromat, CHAD, CCMH",
+tran_doloc,character,3504,59.77482088,"Home residence of individual, 13 Chapel Street, Auburn New York 13021, NA, Other, Home residence of friend/acquaintance/family member",
+tran_doloc_other,character,4642,79.18799045,"NA, Colonial Laundromat, CHAD, CCMH, did not transport the client",
+tran_mileage,numeric,3504,59.77482088,"2, 3, NA, 5, 11",
+grantname,character,5596,95.46229956,"NA, AIC - Auburn Intervention Court (BJA), AEI - Alliance for Equity & Inclusion, KFT - Keeping Families Together (BJA), ACH > DSS (CCOSG) 2023",
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+Nick's ride service codebook,,,,,
+Variable,Data_Type,Num_Missing,Pct_Missing,Unique_Values,Description
+clientid,numeric,0,0,"1, 2, 3, 4, 5",Unique client identifier
+dateofbirth,Date,0,0,"1982-10-11, 1998-06-03, 1964-08-07, 1984-09-06, 1969-10-19",Client's date of birth
+gender,character,18,1.312910284,"Male, NA, Female, Transgender, Prefer Not to Answer",Gender identity of the client
+ethnicity,character,68,4.959883297,"White/Caucasian, Black/African American, Unknown, NA, Hispanic or Latino",Self-reported ethnicity
+ethnicity_other,character,1343,97.95769511,"NA, French/Canadian, White/Caucasian, mixed, Irish",Other ethnicity (if not listed)
+homelessflag,character,355,25.89350839,"Yes, No, NA",Indicates if client is currently homeless
+veteran,character,355,25.89350839,"Unspecified, Yes, No, NA",Veteran status
+deceased,character,0,0,"No, Yes",Deceased status
+home_city,character,266,19.40189643,"Port Byron, Auburn, Weedsport, Red Creek, Throop",City of residence
+home_state,character,5,0.364697301,"NY, NA, VA",State of residence
+home_zip,numeric,313,22.83005106,"13140, 13021, 13166, 13143, 14895",ZIP code of the client's residence
+county,character,571,41.6484318,"Cayuga, Wayne, NA, Otsego, Onondaga",County of the client's residence
+last_interaction_date,Date,90,6.564551422,"2024-10-25, 2025-05-14, 2022-08-02, 2022-05-13, 2022-03-15",last interaction date??
+current_date,Date,0,0,5/22/2025,Date the data was recorded 
+age,numeric,109,7.950401167,"42, 26, 57, 37, 52",client's age
+contactdate,Date,526,38.36615609,"NA, 2022-06-14, 2022-03-01, 2022-10-17, 2022-03-03",Date the client was contacted
+clientstatus,character,526,38.36615609,"NA, Returning, New",Client's returing status in the program
+cayugares,character,526,38.36615609,"NA, Yes, No, Unkn",cayugares??
+city,character,526,38.36615609,"NA, Auburn, New Berlin, Butler, Marietta",city??
+state,character,526,38.36615609,"NA, NY, VA",state??
+pregnant,character,526,38.36615609,"NA, No, Unkn, Yes, Unknown",client's pregnant status
+sub_heroin,character,1094,79.79576951,"NA, Yes",Reported heroin use
+sub_opirx,character,1267,92.41429613,"NA, Yes",Reported opioid use
+sub_opioth,character,1272,92.77899344,"NA, Yes",Reported nonprescriped opioid use
+sub_cocaine,character,1030,75.12764406,"NA, Yes",Reported cocaine use
+sub_molly,character,1051,76.65937272,"NA, Yes",Reported Molly use
+sub_alcohol,character,938,68.41721371,"NA, Yes",Reported alcohol use
+sub_marijuana,character,1034,75.4194019,"NA, Yes",Reported marijuana use
+sub_amphstim,character,1212,88.40262582,"NA, Yes",Reported amphetamine use
+sub_other,character,1326,96.71772429,"NA, Yes",Reported other substance use?(yes/no)
+sub_othertext,character,1326,96.71772429,"NA, Crack Fentanyl, Benzos, Sham, Spike",the name of the other substance 
+pcp,character,771,56.23632385,"NA, Yes, No, Unknown",Phencyclidine (PCP) usage before??
+legal,character,771,56.23632385,"NA, Yes, No, Unknown",Legal system involvement(yes/no)
+involvement,character,1121,81.76513494,"NA, Pending Charges, Parole, Probation, CPS",Types of legal system involvement
+overdose,character,526,38.36615609,"NA, No, Yes, Unknown",personal history overdose(yes/no)
+narcan,character,1038,75.71115974,"NA, Unknown, Yes, No",usage of naloxone (Narcan) before?(yes/no)
+hospital,character,526,38.36615609,"NA, No, Yes, Unknown",Hospitalizations reported
+diagnosis,character,526,38.36615609,"NA, No, Unknown, Yes",Reported diagnosis??
+jail,character,526,38.36615609,"NA, Yes, Unknown, No",History of jail 
+referral,character,526,38.36615609,"NA, Cayuga County Mental Health, Other, Walk-in, Auburn Community Hospital",Referring agency or source
+hist_su,character,577,42.08606856,"NA, Yes",histsu??
+retention_days,numeric,526,38.36615609,"NA, 49, 765, 73, 0",Number of days the client remained engaged in services
+retention_30_days,character,0,0,"Unknown, Yes, No",Whether the client remained engaged >30 days(yes/no)
+retention_90_days,character,0,0,"Unknown, No, Yes",Whether the client remained engaged >90 days(yes/no)
+Variable,Data_Type,Num_Missing,Pct_Missing,Unique_Values,Description
+clientid,numeric,857.6057082,62.55329746,"1, 2, 3, 4, 6",Unique client identifier
+dateofbirth,Date,869.8295983,63.44490141,"1982-10-11, 1998-06-03, 1964-08-07, 1984-09-06, 1969-10-20",Client's date of birth
+gender,character,882.0534884,64.33650535,"Male, NA, Female, Transgender, Prefer Not to Answer",Gender identity of the client
+ethnicity,character,894.2773784,65.22810929,"White/Caucasian, Black/African American, Unknown, NA, Hispanic or Latino",Self-reported ethnicity
+ethnicity_other,character,906.5012685,66.11971324,"NA, French/Canadian, White/Caucasian, mixed, Irish",Other ethnicity (if not listed)
+homelessflag,character,918.7251586,67.01131718,"Yes, No, NA",Indicates if client is currently homeless
+veteran,character,930.9490486,67.90292112,"Unspecified, Yes, No, NA",Veteran status
+deceased,character,943.1729387,68.79452507,"No, Yes",Deceased status
+home_city,character,955.3968288,69.68612901,"Port Byron, Auburn, Weedsport, Red Creek, Throop",City of residence
+home_state,character,967.6207188,70.57773295,"NY, NA, VA",State of residence
+home_zip,numeric,979.8446089,71.4693369,"13140, 13021, 13166, 13143, 14896",ZIP code of the client's residence
+county,character,992.0684989,72.36094084,"Cayuga, Wayne, NA, Otsego, Onondaga",County of the client's residence
+last_interaction_date,Date,1004.292389,73.25254478,"2024-10-25, 2025-05-14, 2022-08-02, 2022-05-13, 2022-03-16",last interaction date??
+current_date,Date,1016.516279,74.14414873,5/23/2025,Date the data was recorded 
+age,numeric,1028.740169,75.03575267,"42, 26, 57, 37, 53",client's age
+contactdate,Date,1040.964059,75.92735662,"NA, 2022-06-14, 2022-03-01, 2022-10-17, 2022-03-04",Date the client was contacted
+clientstatus,character,1053.187949,76.81896056,"NA, Returning, New",Client's returing status in the program
+cayugares,character,1065.411839,77.7105645,"NA, Yes, No, Unkn",cayugares??
+city,character,1077.635729,78.60216845,"NA, Auburn, New Berlin, Butler, Marietta",city??
+state,character,1089.859619,79.49377239,"NA, NY, VA",state??
+pregnant,character,1102.08351,80.38537633,"NA, No, Unkn, Yes, Unknown",client's pregnant status
+sub_heroin,character,1114.3074,81.27698028,"NA, Yes",Reported heroin use
+sub_opirx,character,1126.53129,82.16858422,"NA, Yes",Reported opioid use
+sub_opioth,character,1138.75518,83.06018816,"NA, Yes",Reported nonprescriped opioid use
+sub_cocaine,character,1150.97907,83.95179211,"NA, Yes",Reported cocaine use
+sub_molly,character,1163.20296,84.84339605,"NA, Yes",Reported Molly use
+sub_alcohol,character,1175.42685,85.73499999,"NA, Yes",Reported alcohol use
+sub_marijuana,character,1187.65074,86.62660394,"NA, Yes",Reported marijuana use
+sub_amphstim,character,1199.87463,87.51820788,"NA, Yes",Reported amphetamine use
+sub_other,character,1212.09852,88.40981182,"NA, Yes",Reported other substance use?(yes/no)
+sub_othertext,character,1224.32241,89.30141577,"NA, Crack Fentanyl, Benzos, Sham, Spike",the name of the other substance 
+pcp,character,1236.5463,90.19301971,"NA, Yes, No, Unknown",Phencyclidine (PCP) usage before??
+legal,character,1248.77019,91.08462365,"NA, Yes, No, Unknown",Legal system involvement(yes/no)
+involvement,character,1260.99408,91.9762276,"NA, Pending Charges, Parole, Probation, CPS",Types of legal system involvement
+overdose,character,1273.21797,92.86783154,"NA, No, Yes, Unknown",personal history overdose(yes/no)
+narcan,character,1285.44186,93.75943548,"NA, Unknown, Yes, No",usage of naloxone (Narcan) before?(yes/no)
+hospital,character,1297.665751,94.65103943,"NA, No, Yes, Unknown",Hospitalizations reported
+diagnosis,character,1309.889641,95.54264337,"NA, No, Unknown, Yes",Reported diagnosis??
+jail,character,1322.113531,96.43424731,"NA, Yes, Unknown, No",History of jail 
+referral,character,1334.337421,97.32585126,"NA, Cayuga County Mental Health, Other, Walk-in, Auburn Community Hospital",Referring agency or source
+hist_su,character,1346.561311,98.2174552,"NA, Yes",histsu??
+retention_days,numeric,1358.785201,99.10905914,"NA, 49, 765, 73, 1",Number of days the client remained engaged in services
+retention_30_days,character,1371.009091,100.0006631,"Unknown, Yes, No",Whether the client remained engaged >30 days(yes/no)
+retention_90_days,character,1383.232981,100.892267,"Unknown, No, Yes",Whether the client remained engaged >90 days(yes/no)
+Variable,Data_Type,Num_Missing,Pct_Missing,Unique_Values,Description
+clientid,numeric,1395.456871,101.783871,"1, 2, 3, 4, 7",Unique client identifier
+dateofbirth,Date,1407.680761,102.6754749,"1982-10-11, 1998-06-03, 1964-08-07, 1984-09-06, 1969-10-21",Client's date of birth
+gender,character,1419.904651,103.5670789,"Male, NA, Female, Transgender, Prefer Not to Answer",Gender identity of the client
+ethnicity,character,1432.128541,104.4586828,"White/Caucasian, Black/African American, Unknown, NA, Hispanic or Latino",Self-reported ethnicity
+ethnicity_other,character,1444.352431,105.3502867,"NA, French/Canadian, White/Caucasian, mixed, Irish",Other ethnicity (if not listed)
+homelessflag,character,1456.576321,106.2418907,"Yes, No, NA",Indicates if client is currently homeless
+veteran,character,1468.800211,107.1334946,"Unspecified, Yes, No, NA",Veteran status
+deceased,character,1481.024101,108.0250986,"No, Yes",Deceased status
+home_city,character,1493.247992,108.9167025,"Port Byron, Auburn, Weedsport, Red Creek, Throop",City of residence
+home_state,character,1505.471882,109.8083065,"NY, NA, VA",State of residence
+home_zip,numeric,1517.695772,110.6999104,"13140, 13021, 13166, 13143, 14897",ZIP code of the client's residence
+county,character,1529.919662,111.5915143,"Cayuga, Wayne, NA, Otsego, Onondaga",County of the client's residence
+last_interaction_date,Date,1542.143552,112.4831183,"2024-10-25, 2025-05-14, 2022-08-02, 2022-05-13, 2022-03-17",last interaction date??
+current_date,Date,1554.367442,113.3747222,5/24/2025,Date the data was recorded 
+age,numeric,1566.591332,114.2663262,"42, 26, 57, 37, 54",client's age
+contactdate,Date,1578.815222,115.1579301,"NA, 2022-06-14, 2022-03-01, 2022-10-17, 2022-03-05",Date the client was contacted
+clientstatus,character,1591.039112,116.0495341,"NA, Returning, New",Client's returing status in the program
+cayugares,character,1603.263002,116.941138,"NA, Yes, No, Unkn",cayugares??
+city,character,1615.486892,117.832742,"NA, Auburn, New Berlin, Butler, Marietta",city??
+state,character,1627.710782,118.7243459,"NA, NY, VA",state??
+pregnant,character,1639.934672,119.6159498,"NA, No, Unkn, Yes, Unknown",client's pregnant status
+sub_heroin,character,1652.158562,120.5075538,"NA, Yes",Reported heroin use
+sub_opirx,character,1664.382452,121.3991577,"NA, Yes",Reported opioid use
+sub_opioth,character,1676.606342,122.2907617,"NA, Yes",Reported nonprescriped opioid use
+sub_cocaine,character,1688.830233,123.1823656,"NA, Yes",Reported cocaine use
+sub_molly,character,1701.054123,124.0739696,"NA, Yes",Reported Molly use
+sub_alcohol,character,1713.278013,124.9655735,"NA, Yes",Reported alcohol use
+sub_marijuana,character,1725.501903,125.8571774,"NA, Yes",Reported marijuana use
+sub_amphstim,character,1737.725793,126.7487814,"NA, Yes",Reported amphetamine use
+sub_other,character,1749.949683,127.6403853,"NA, Yes",Reported other substance use?(yes/no)
+sub_othertext,character,1762.173573,128.5319893,"NA, Crack Fentanyl, Benzos, Sham, Spike",the name of the other substance 
+pcp,character,1774.397463,129.4235932,"NA, Yes, No, Unknown",Phencyclidine (PCP) usage before??
+legal,character,1786.621353,130.3151972,"NA, Yes, No, Unknown",Legal system involvement(yes/no)
+involvement,character,1798.845243,131.2068011,"NA, Pending Charges, Parole, Probation, CPS",Types of legal system involvement
+overdose,character,1811.069133,132.098405,"NA, No, Yes, Unknown",personal history overdose(yes/no)
+narcan,character,1823.293023,132.990009,"NA, Unknown, Yes, No",usage of naloxone (Narcan) before?(yes/no)
+hospital,character,1835.516913,133.8816129,"NA, No, Yes, Unknown",Hospitalizations reported
+diagnosis,character,1847.740803,134.7732169,"NA, No, Unknown, Yes",Reported diagnosis??
+jail,character,1859.964693,135.6648208,"NA, Yes, Unknown, No",History of jail 
+referral,character,1872.188584,136.5564248,"NA, Cayuga County Mental Health, Other, Walk-in, Auburn Community Hospital",Referring agency or source
+hist_su,character,1884.412474,137.4480287,"NA, Yes",histsu??
+retention_days,numeric,1896.636364,138.3396326,"NA, 49, 765, 73, 2",Number of days the client remained engaged in services
+retention_30_days,character,1908.860254,139.2312366,"Unknown, Yes, No",Whether the client remained engaged >30 days(yes/no)
+retention_90_days,character,1921.084144,140.1228405,"Unknown, No, Yes",Whether the client remained engaged >90 days(yes/no)
+Variable,Data_Type,Num_Missing,Pct_Missing,Unique_Values,Description
+clientid,numeric,1933.308034,141.0144445,"1, 2, 3, 4, 8",Unique client identifier
+dateofbirth,Date,1945.531924,141.9060484,"1982-10-11, 1998-06-03, 1964-08-07, 1984-09-06, 1969-10-22",Client's date of birth
+gender,character,1957.755814,142.7976524,"Male, NA, Female, Transgender, Prefer Not to Answer",Gender identity of the client
+ethnicity,character,1969.979704,143.6892563,"White/Caucasian, Black/African American, Unknown, NA, Hispanic or Latino",Self-reported ethnicity
+ethnicity_other,character,1982.203594,144.5808603,"NA, French/Canadian, White/Caucasian, mixed, Irish",Other ethnicity (if not listed)
+homelessflag,character,1994.427484,145.4724642,"Yes, No, NA",Indicates if client is currently homeless
+veteran,character,2006.651374,146.3640681,"Unspecified, Yes, No, NA",Veteran status
+deceased,character,2018.875264,147.2556721,"No, Yes",Deceased status
+home_city,character,2031.099154,148.147276,"Port Byron, Auburn, Weedsport, Red Creek, Throop",City of residence
+home_state,character,2043.323044,149.03888,"NY, NA, VA",State of residence
+home_zip,numeric,2055.546934,149.9304839,"13140, 13021, 13166, 13143, 14898",ZIP code of the client's residence
+county,character,2067.770825,150.8220879,"Cayuga, Wayne, NA, Otsego, Onondaga",County of the client's residence
+last_interaction_date,Date,2079.994715,151.7136918,"2024-10-25, 2025-05-14, 2022-08-02, 2022-05-13, 2022-03-18",last interaction date??
+current_date,Date,2092.218605,152.6052957,5/25/2025,Date the data was recorded 
+age,numeric,2104.442495,153.4968997,"42, 26, 57, 37, 55",client's age
+contactdate,Date,2116.666385,154.3885036,"NA, 2022-06-14, 2022-03-01, 2022-10-17, 2022-03-06",Date the client was contacted
+clientstatus,character,2128.890275,155.2801076,"NA, Returning, New",Client's returing status in the program
+cayugares,character,2141.114165,156.1717115,"NA, Yes, No, Unkn",cayugares??
+city,character,2153.338055,157.0633155,"NA, Auburn, New Berlin, Butler, Marietta",city??
+state,character,2165.561945,157.9549194,"NA, NY, VA",state??
+pregnant,character,2177.785835,158.8465233,"NA, No, Unkn, Yes, Unknown",client's pregnant status
+sub_heroin,character,2190.009725,159.7381273,"NA, Yes",Reported heroin use
+sub_opirx,character,2202.233615,160.6297312,"NA, Yes",Reported opioid use
+sub_opioth,character,2214.457505,161.5213352,"NA, Yes",Reported nonprescriped opioid use
+sub_cocaine,character,2226.681395,162.4129391,"NA, Yes",Reported cocaine use
+sub_molly,character,2238.905285,163.3045431,"NA, Yes",Reported Molly use
+sub_alcohol,character,2251.129175,164.196147,"NA, Yes",Reported alcohol use
+sub_marijuana,character,2263.353066,165.0877509,"NA, Yes",Reported marijuana use
+sub_amphstim,character,2275.576956,165.9793549,"NA, Yes",Reported amphetamine use
+sub_other,character,2287.800846,166.8709588,"NA, Yes",Reported other substance use?(yes/no)
+sub_othertext,character,2300.024736,167.7625628,"NA, Crack Fentanyl, Benzos, Sham, Spike",the name of the other substance 
+pcp,character,2312.248626,168.6541667,"NA, Yes, No, Unknown",Phencyclidine (PCP) usage before??
+legal,character,2324.472516,169.5457707,"NA, Yes, No, Unknown",Legal system involvement(yes/no)
+involvement,character,2336.696406,170.4373746,"NA, Pending Charges, Parole, Probation, CPS",Types of legal system involvement
+overdose,character,2348.920296,171.3289786,"NA, No, Yes, Unknown",personal history overdose(yes/no)
+narcan,character,2361.144186,172.2205825,"NA, Unknown, Yes, No",usage of naloxone (Narcan) before?(yes/no)
+hospital,character,2373.368076,173.1121864,"NA, No, Yes, Unknown",Hospitalizations reported
+diagnosis,character,2385.591966,174.0037904,"NA, No, Unknown, Yes",Reported diagnosis??
+jail,character,2397.815856,174.8953943,"NA, Yes, Unknown, No",History of jail 
+referral,character,2410.039746,175.7869983,"NA, Cayuga County Mental Health, Other, Walk-in, Auburn Community Hospital",Referring agency or source
+hist_su,character,2422.263636,176.6786022,"NA, Yes",histsu??
+retention_days,numeric,2434.487526,177.5702062,"NA, 49, 765, 73, 3",Number of days the client remained engaged in services
+retention_30_days,character,2446.711416,178.4618101,"Unknown, Yes, No",Whether the client remained engaged >30 days(yes/no)
+retention_90_days,character,2458.935307,179.353414,"Unknown, No, Yes",Whether the client remained engaged >90 days(yes/no)
+Variable,Data_Type,Num_Missing,Pct_Missing,Unique_Values,Description
+clientid,numeric,2471.159197,180.245018,"1, 2, 3, 4, 9",Unique client identifier
+dateofbirth,Date,2483.383087,181.1366219,"1982-10-11, 1998-06-03, 1964-08-07, 1984-09-06, 1969-10-23",Client's date of birth
+gender,character,2495.606977,182.0282259,"Male, NA, Female, Transgender, Prefer Not to Answer",Gender identity of the client
+ethnicity,character,2507.830867,182.9198298,"White/Caucasian, Black/African American, Unknown, NA, Hispanic or Latino",Self-reported ethnicity
+ethnicity_other,character,2520.054757,183.8114338,"NA, French/Canadian, White/Caucasian, mixed, Irish",Other ethnicity (if not listed)
+homelessflag,character,2532.278647,184.7030377,"Yes, No, NA",Indicates if client is currently homeless
+veteran,character,2544.502537,185.5946416,"Unspecified, Yes, No, NA",Veteran status
+deceased,character,2556.726427,186.4862456,"No, Yes",Deceased status
+home_city,character,2568.950317,187.3778495,"Port Byron, Auburn, Weedsport, Red Creek, Throop",City of residence
+home_state,character,2581.174207,188.2694535,"NY, NA, VA",State of residence
+home_zip,numeric,2593.398097,189.1610574,"13140, 13021, 13166, 13143, 14899",ZIP code of the client's residence
+county,character,2605.621987,190.0526614,"Cayuga, Wayne, NA, Otsego, Onondaga",County of the client's residence
+last_interaction_date,Date,2617.845877,190.9442653,"2024-10-25, 2025-05-14, 2022-08-02, 2022-05-13, 2022-03-19",last interaction date??
+current_date,Date,2630.069767,191.8358692,5/26/2025,Date the data was recorded 
+age,numeric,2642.293658,192.7274732,"42, 26, 57, 37, 56",client's age
+contactdate,Date,2654.517548,193.6190771,"NA, 2022-06-14, 2022-03-01, 2022-10-17, 2022-03-07",Date the client was contacted
+clientstatus,character,2666.741438,194.5106811,"NA, Returning, New",Client's returing status in the program
+cayugares,character,2678.965328,195.402285,"NA, Yes, No, Unkn",cayugares??
+city,character,2691.189218,196.293889,"NA, Auburn, New Berlin, Butler, Marietta",city??
+state,character,2703.413108,197.1854929,"NA, NY, VA",state??
+pregnant,character,2715.636998,198.0770969,"NA, No, Unkn, Yes, Unknown",client's pregnant status
+sub_heroin,character,2727.860888,198.9687008,"NA, Yes",Reported heroin use
+sub_opirx,character,2740.084778,199.8603047,"NA, Yes",Reported opioid use
+sub_opioth,character,2752.308668,200.7519087,"NA, Yes",Reported nonprescriped opioid use
+sub_cocaine,character,2764.532558,201.6435126,"NA, Yes",Reported cocaine use
+sub_molly,character,2776.756448,202.5351166,"NA, Yes",Reported Molly use
+sub_alcohol,character,2788.980338,203.4267205,"NA, Yes",Reported alcohol use
+sub_marijuana,character,2801.204228,204.3183245,"NA, Yes",Reported marijuana use
+sub_amphstim,character,2813.428118,205.2099284,"NA, Yes",Reported amphetamine use
+sub_other,character,2825.652008,206.1015323,"NA, Yes",Reported other substance use?(yes/no)
+sub_othertext,character,2837.875899,206.9931363,"NA, Crack Fentanyl, Benzos, Sham, Spike",the name of the other substance 
+pcp,character,2850.099789,207.8847402,"NA, Yes, No, Unknown",Phencyclidine (PCP) usage before??
+legal,character,2862.323679,208.7763442,"NA, Yes, No, Unknown",Legal system involvement(yes/no)
+involvement,character,2874.547569,209.6679481,"NA, Pending Charges, Parole, Probation, CPS",Types of legal system involvement
+overdose,character,2886.771459,210.5595521,"NA, No, Yes, Unknown",personal history overdose(yes/no)
+narcan,character,2898.995349,211.451156,"NA, Unknown, Yes, No",usage of naloxone (Narcan) before?(yes/no)
+hospital,character,2911.219239,212.3427599,"NA, No, Yes, Unknown",Hospitalizations reported
+diagnosis,character,2923.443129,213.2343639,"NA, No, Unknown, Yes",Reported diagnosis??
+jail,character,2935.667019,214.1259678,"NA, Yes, Unknown, No",History of jail 
+referral,character,2947.890909,215.0175718,"NA, Cayuga County Mental Health, Other, Walk-in, Auburn Community Hospital",Referring agency or source
+hist_su,character,2960.114799,215.9091757,"NA, Yes",histsu??
+retention_days,numeric,2972.338689,216.8007797,"NA, 49, 765, 73, 4",Number of days the client remained engaged in services
+retention_30_days,character,2984.562579,217.6923836,"Unknown, Yes, No",Whether the client remained engaged >30 days(yes/no)
+retention_90_days,character,2996.786469,218.5839876,"Unknown, No, Yes",Whether the client remained engaged >90 days(yes/no)
+Variable,Data_Type,Num_Missing,Pct_Missing,Unique_Values,Description
+clientid,numeric,3009.010359,219.4755915,"1, 2, 3, 4, 10",Unique client identifier
+dateofbirth,Date,3021.234249,220.3671954,"1982-10-11, 1998-06-03, 1964-08-07, 1984-09-06, 1969-10-24",Client's date of birth
+gender,character,3033.45814,221.2587994,"Male, NA, Female, Transgender, Prefer Not to Answer",Gender identity of the client
+ethnicity,character,3045.68203,222.1504033,"White/Caucasian, Black/African American, Unknown, NA, Hispanic or Latino",Self-reported ethnicity
+ethnicity_other,character,3057.90592,223.0420073,"NA, French/Canadian, White/Caucasian, mixed, Irish",Other ethnicity (if not listed)
+homelessflag,character,3070.12981,223.9336112,"Yes, No, NA",Indicates if client is currently homeless
+veteran,character,3082.3537,224.8252152,"Unspecified, Yes, No, NA",Veteran status
+deceased,character,3094.57759,225.7168191,"No, Yes",Deceased status
+home_city,character,3106.80148,226.608423,"Port Byron, Auburn, Weedsport, Red Creek, Throop",City of residence
+home_state,character,3119.02537,227.500027,"NY, NA, VA",State of residence
+home_zip,numeric,3131.24926,228.3916309,"13140, 13021, 13166, 13143, 14900",ZIP code of the client's residence
+county,character,3143.47315,229.2832349,"Cayuga, Wayne, NA, Otsego, Onondaga",County of the client's residence
+last_interaction_date,Date,3155.69704,230.1748388,"2024-10-25, 2025-05-14, 2022-08-02, 2022-05-13, 2022-03-20",last interaction date??
+current_date,Date,3167.92093,231.0664428,5/27/2025,Date the data was recorded 
+age,numeric,3180.14482,231.9580467,"42, 26, 57, 37, 57",client's age
+contactdate,Date,3192.36871,232.8496506,"NA, 2022-06-14, 2022-03-01, 2022-10-17, 2022-03-08",Date the client was contacted
+clientstatus,character,3204.5926,233.7412546,"NA, Returning, New",Client's returing status in the program
+cayugares,character,3216.81649,234.6328585,"NA, Yes, No, Unkn",cayugares??
+city,character,3229.040381,235.5244625,"NA, Auburn, New Berlin, Butler, Marietta",city??
+state,character,3241.264271,236.4160664,"NA, NY, VA",state??
+pregnant,character,3253.488161,237.3076704,"NA, No, Unkn, Yes, Unknown",client's pregnant status
+sub_heroin,character,3265.712051,238.1992743,"NA, Yes",Reported heroin use
+sub_opirx,character,3277.935941,239.0908782,"NA, Yes",Reported opioid use
+sub_opioth,character,3290.159831,239.9824822,"NA, Yes",Reported nonprescriped opioid use
+sub_cocaine,character,3302.383721,240.8740861,"NA, Yes",Reported cocaine use
+sub_molly,character,3314.607611,241.7656901,"NA, Yes",Reported Molly use
+sub_alcohol,character,3326.831501,242.657294,"NA, Yes",Reported alcohol use
+sub_marijuana,character,3339.055391,243.548898,"NA, Yes",Reported marijuana use
+sub_amphstim,character,3351.279281,244.4405019,"NA, Yes",Reported amphetamine use
+sub_other,character,3363.503171,245.3321059,"NA, Yes",Reported other substance use?(yes/no)
+sub_othertext,character,3375.727061,246.2237098,"NA, Crack Fentanyl, Benzos, Sham, Spike",the name of the other substance 
+pcp,character,3387.950951,247.1153137,"NA, Yes, No, Unknown",Phencyclidine (PCP) usage before??
+legal,character,3400.174841,248.0069177,"NA, Yes, No, Unknown",Legal system involvement(yes/no)
+involvement,character,3412.398732,248.8985216,"NA, Pending Charges, Parole, Probation, CPS",Types of legal system involvement
+overdose,character,3424.622622,249.7901256,"NA, No, Yes, Unknown",personal history overdose(yes/no)
+narcan,character,3436.846512,250.6817295,"NA, Unknown, Yes, No",usage of naloxone (Narcan) before?(yes/no)
+hospital,character,3449.070402,251.5733335,"NA, No, Yes, Unknown",Hospitalizations reported
+diagnosis,character,3461.294292,252.4649374,"NA, No, Unknown, Yes",Reported diagnosis??
+jail,character,3473.518182,253.3565413,"NA, Yes, Unknown, No",History of jail 
+referral,character,3485.742072,254.2481453,"NA, Cayuga County Mental Health, Other, Walk-in, Auburn Community Hospital",Referring agency or source
+hist_su,character,3497.965962,255.1397492,"NA, Yes",histsu??
+retention_days,numeric,3510.189852,256.0313532,"NA, 49, 765, 73, 5",Number of days the client remained engaged in services
+retention_30_days,character,3522.413742,256.9229571,"Unknown, Yes, No",Whether the client remained engaged >30 days(yes/no)
+retention_90_days,character,3534.637632,257.8145611,"Unknown, No, Yes",Whether the client remained engaged >90 days(yes/no)
+Variable,Data_Type,Num_Missing,Pct_Missing,Unique_Values,Description
+clientid,numeric,3546.861522,258.706165,"1, 2, 3, 4, 11",Unique client identifier
+dateofbirth,Date,3559.085412,259.5977689,"1982-10-11, 1998-06-03, 1964-08-07, 1984-09-06, 1969-10-25",Client's date of birth
+gender,character,3571.309302,260.4893729,"Male, NA, Female, Transgender, Prefer Not to Answer",Gender identity of the client
+ethnicity,character,3583.533192,261.3809768,"White/Caucasian, Black/African American, Unknown, NA, Hispanic or Latino",Self-reported ethnicity
+ethnicity_other,character,3595.757082,262.2725808,"NA, French/Canadian, White/Caucasian, mixed, Irish",Other ethnicity (if not listed)
+homelessflag,character,3607.980973,263.1641847,"Yes, No, NA",Indicates if client is currently homeless
+veteran,character,3620.204863,264.0557887,"Unspecified, Yes, No, NA",Veteran status
+deceased,character,3632.428753,264.9473926,"No, Yes",Deceased status
+home_city,character,3644.652643,265.8389965,"Port Byron, Auburn, Weedsport, Red Creek, Throop",City of residence
+home_state,character,3656.876533,266.7306005,"NY, NA, VA",State of residence
+home_zip,numeric,3669.100423,267.6222044,"13140, 13021, 13166, 13143, 14901",ZIP code of the client's residence
+county,character,3681.324313,268.5138084,"Cayuga, Wayne, NA, Otsego, Onondaga",County of the client's residence
+last_interaction_date,Date,3693.548203,269.4054123,"2024-10-25, 2025-05-14, 2022-08-02, 2022-05-13, 2022-03-21",last interaction date??
+current_date,Date,3705.772093,270.2970163,5/28/2025,Date the data was recorded 
+age,numeric,3717.995983,271.1886202,"42, 26, 57, 37, 58",client's age
+contactdate,Date,3730.219873,272.0802242,"NA, 2022-06-14, 2022-03-01, 2022-10-17, 2022-03-09",Date the client was contacted
+clientstatus,character,3742.443763,272.9718281,"NA, Returning, New",Client's returing status in the program
+cayugares,character,3754.667653,273.863432,"NA, Yes, No, Unkn",cayugares??
+city,character,3766.891543,274.755036,"NA, Auburn, New Berlin, Butler, Marietta",city??
+state,character,3779.115433,275.6466399,"NA, NY, VA",state??
